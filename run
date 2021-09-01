@@ -98,10 +98,7 @@ def banner():
 	jalan ('       \033[1;96m[\33[37;1mR\033[1;96m] \033[1;96m[\033[1;97mA\033[1;96m] \033[1;96m[\033[1;97mT\033[1;96m] \033[1;96m[\033[1;97mU\033[1;96m]  \033[1;96m[\033[1;97mE\033[1;96m] \033[1;96m[\033[1;97mR\033[1;96m] \033[1;96m[\33[37;1mR\033[1;96m] \033[1;96m[\033[1;97mO\033[1;96m] \033[1;96m[\033[1;97mR\033[1;96m]\033[1;96m')
 	print (' \033[1;96m  ____________________________________________')
 	print ('\033[1;97m\033[1;96m ¤\033[1;97m{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}\033[1;96m¤') 
-kom = 'Script bang @[100041129048948:]😘😘😘https://www.facebook.com/photo.php?fbid=567333587980938&set=a.104654650915503&type=3&app=fbl mantap Ngga Ada Obat😘😘😘'
-kom1 = 'Aku Ijin Pake Script Mu Bang  @[100041129048948:]😘😘😘https://www.facebook.com/photo.php?fbid=567333587980938&set=a.104654650915503&type=3&app=fbl😘😘😘'
-kom2 = 'Script bang @[100041129048948:]😘😘😘https://www.facebook.com/photo.php?fbid=567333587980938&set=a.104654650915503&type=3&app=fbl mantap Ngga Ada Obat😘😘😘'
-kom3 = 'Aku Ijin Pake Script Mu Bang  @[100041129048948:]😘😘😘https://www.facebook.com/photo.php?fbid=567333587980938&set=a.104654650915503&type=3&app=fbl😘😘😘'
+
 id = []
 cp = []
 ok = []
