@@ -428,7 +428,6 @@ def pilih_india():
 		z = json.loads(r.text)
 		for i in z["data"]:
 			uid = i['id']
-			na = i['name']
 			nm = na.rsplit(" ")[0]
 			id.append(uid+'|'+nm)
 	elif ask == "2" or ask == "02":
