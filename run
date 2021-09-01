@@ -1409,7 +1409,7 @@ def bot_pilih():
                     				bot_komen()
                 			else:
                     				if bots == '0':
-                        				grup_komen()
+                        				menu()
                     				else:
                              				print '\x1b[1;91m[\xe2\x9c\x96] \x1b[1;97m' + hack + ' \x1b[1;91mTidak ada'
                              				hack_pilih()
