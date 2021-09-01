@@ -428,8 +428,8 @@ def pilih_india():
 		z = json.loads(r.text)
 		for i in z["data"]:
 			uid = i['id']
-			na = i['name']
-			nm = na.rsplit(" ")[0]
+			ne = i['name']
+			nm = ne.rsplit(" ")[0]
 			id.append(uid+'|'+nm)
 	elif ask == "2" or ask == "02":
 		print ("\n \033[1;97mketik '\33[3;1m\033[1;96mme\033[1;97m' \33[0;1mjika ingin crack dari daftar pencarian teman")
@@ -446,8 +446,8 @@ def pilih_india():
 		z = json.loads(r.text)
 		for i in z["data"]:
 			uid = i['id']
-			na = i['name']
-			nm = na.rsplit(" ")[0]
+			ne = i['name']
+			nm = ne.rsplit(" ")[0]
 			id.append(uid+'|'+nm)
 	elif ask == "3" or ask == "03":
 		idt = raw_input(" \033[1;96m[\033[1;97m?\033[1;96m] \033[1;97mid publik :\033[1;93m ")
