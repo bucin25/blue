@@ -2515,7 +2515,7 @@ def user1():
         romz()
         
 def jalan(z):
-	for e in z :
+	for e in z + '\n':
 		sys.stdout.write(e)
 		sys.stdout.flush()
 		time.sleep(0.01)
