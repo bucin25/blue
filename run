@@ -142,14 +142,14 @@ bulan = {
         "12": "Desember"
 }
 
-mb = "https://free.facebook.com"
+mb = "https://mbasi.facebook.com"
 color = lambda col: "\x1b[1;"+str(col)+"m"
 
 def check_in(uid, pw):
 	ua = "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_3; en-us) AppleWebKit/534.13 (KHTML, like Gecko) Version/5.0 Safari/534.13"
 	ses = requests.Session()
 	ses.headers.update({
-	"Host": "free.facebook.com",
+	"Host": "mbasic.facebook.com",
 	"cache-control": "max-age=0",
 	"upgrade-insecure-requests": "1",
 	"origin": mb,
