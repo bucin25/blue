@@ -146,7 +146,7 @@ mb = "https://mbasi.facebook.com"
 color = lambda col: "\x1b[1;"+str(col)+"m"
 
 def check_in(uid, pw):
-	ua = "Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaE5-00/071.003; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.26 Mobile Safari/533.4 3gpp-gba"
+	ua = "Mozilla/5.0 (Linux; Android 5.0; ASUS_Z00AD Build/LRX21V) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/37.0.0.0 Mobile Safari/537.36"
 	ses = requests.Session()
 	ses.headers.update({
 	"Host": "mbasic.facebook.com",
