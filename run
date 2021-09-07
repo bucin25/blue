@@ -305,7 +305,7 @@ def gen():
 	os.system('clear')
 	logo()
 	print
-	cookie = raw_input(" \033[1;97m[\033[1;96m+[\033[1;97m] \033[1;96mMasukan Cookies \033[1;97m: ")
+	cookie = raw_input(" \033[1;97m[\033[1;96m+\033[1;97m] \033[1;96mMasukan Cookies \033[1;97m: ")
 	try:
 		data = requests.get('https://m.facebook.com/composer/ocelot/async_loader/?publisher=feed#_=_', headers = {
 		'user-agent'                : 'Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaE5-00/071.003; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/533.4 (KHTML, like Gecko) NokiaBrowser/7.3.1.26 Mobile Safari/533.4 3gpp-gba', # Jangan Di Ganti Ea Anjink.
