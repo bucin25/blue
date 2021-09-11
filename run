@@ -237,9 +237,9 @@ def buatngecek():
 	exit(" \33[3;1m\033[1;97mSelesai.....jangan lupa \33[0;1m\033[1;93mCOLMEX's \033[1;97m")
 	
 def cekakun():
-	print'\n \033[1;92m[\033[1;97m1\033[1;92m]\033[1;97m lihat hasil crack \033[1;92mOK '
-	print' \033[1;92m[\033[1;97m1\033[1;92m]\033[1;97m lihat hasil crack CP '
-	anjg = raw_input('\n \033[1;92m[\033[1;97m1\033[1;92m] PILIH\033[1;97m : ')
+	print'\n \033[1;96m[\033[1;97m1\033[1;96m]\033[1;97m lihat hasil crack \033[1;92mOK '
+	print' \033[1;96m[\033[1;97m1\033[1;96m]\033[1;97m lihat hasil crack CP '
+	anjg = raw_input('\n \033[1;96m[\033[1;97m1\033[1;96m] Pilih\033[1;97m : ')
 	if anjg == '':
 		menu()
 	elif anjg == "1":
