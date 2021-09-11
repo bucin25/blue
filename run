@@ -207,28 +207,30 @@ def check_in(uid, pw):
 		print(" \033[1;96m[\033[1;97m!\033[1;96m]\033[1;97m login gagal, silahkan cek kembali id dan password")
 
 def buatngecek():
-	print("\n [*] masukan file (ex: CP/%s.txt)"%(tanggal))
-	files = raw_input(" [?] nama file  : ")
-	if files == "":
-		menu()
+	print(" \033[1;96m[\033[1;97m?\033[1;96m]\033[1;97m masukan format CP/namafile")
+	dirs = os.listdir("CP")
+	print("")
+	for file in dirs:
+		print(" \033[1;96m[\033[1;97m×\033[1;96m]\033[1;97m "+file)
+	files = raw_input("\n \033[1;96m[\033[1;97m?\033[1;96m]\033[1;96m PILIH FILE \033[1;97m:\033[1;93m ")
 	try:
-		buka_baju = open(files, "r").readlines()
-	except IOError:
-		exit("\n [!] nama file %s tidak tersedia"%(files))
-	print(" [+] total akun : \033[0;91m%s\033[0;97m"%(len(buka_baju)))
-	print(" [*] sedang prosess cek akun....")
+		buka_baju = open(files,"r").readlines()
+	except FileNotFoundError:
+		print(" \033[1;96m[\033[1;97m×\033[1;96m]\033[1;97m File tidak ada")
+		time.sleep(2); main()
+	print(" \033[1;96m[\033[1;97m+\033[1;96m]\033[1;96m Total Akun \033[1;97m:\033[1;93m "+str(len(buka_baju)))
+	print("\033[1;96m¤"*48)
 	for memek in buka_baju:
 		kontol = memek.replace("\n","")
 		titid  = kontol.split("|")
-		print("\n [+] cek akun : \033[0;93m%s\033[0;97m"%(kontol.replace("  * --> ","")))
+		print(" \033[1;96m[\033[1;97m×\033[1;96m]\033[1;97m check: "+kontol)
 		try:
-			check_in(titid[0].replace("  * --> ",""), titid[1])
+			check_in(titid[0], titid[1])
 		except requests.exceptions.ConnectionError:
-			pass
-	print("\n [!] cek akun sudah selesai...")
-	raw_input(" [+] pencet enter untuk kembali ke menu ")
-	time.sleep(1)
-	menu()
+			continue
+		print("\033[1;96m¤"*48)
+	print("\033[1;96m¤"*48)
+	print("")
 	exit(" \33[3;1m\033[1;97mSelesai.....jangan lupa \33[0;1m\033[1;93mCOLMEX's \033[1;97m")
 	
 def cekakun():
