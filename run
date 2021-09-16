@@ -75,7 +75,7 @@ vuln = '\x1b[32mVuln'
 try:
 	import requests
 except ImportError:
-	print '[×] Modul requests belum terinstall!...\n'
+	print('[×] Modul requests belum terinstall!...\n')
 	os.system('pip install requests' if os.name == 'nt' else 'pip2 install requests')
 reload(sys)
 sys.setdefaultencoding('utf8')
