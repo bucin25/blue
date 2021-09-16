@@ -296,6 +296,8 @@ def pilihlogin():
 		print
 		print("\033[1;96m[\033[1;97m01\033[1;96m] \033[1;97mLogin via TOKEN")
 		print("\033[1;96m[\033[1;97m02\033[1;96m] \033[1;97mLogin via COOKIE")
+		print("\033[1;96m[\033[1;97m03\033[1;96m] \033[1;97mVideo cara mengambil TOKEN")
+		print("\033[1;96m[\033[1;97m04\033[1;96m] \033[1;97mVideo cara mengambil COOKIE")
 		bct = raw_input("\n[?] pilih : ")
 		if bct == "":
 			pilihlogin()
@@ -303,7 +305,10 @@ def pilihlogin():
 			tokenz()
 		elif bct == "2":
 			gen()
-
+		elif bct == "3":
+			os.system("xdg-open https://www.youtube.com/watch?v=Q4I0mOkGjFE")
+		elif bct == "4":
+			os.system("xdg-open https://www.youtube.com/watch?v=MGQYs_UZSxQ")
 def gen():
 	os.system('clear')
 	logo()
