@@ -48,7 +48,7 @@ W = '\033[1;37m'
 A = '\033[90m'
 
 def keluar():
-    print '\x1b[1;91m[!] Keluar'
+    print('\x1b[1;91m[!] Keluar')
     os.sys.exit()
 
 back = 0
