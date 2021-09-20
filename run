@@ -316,7 +316,7 @@ def gen():
 	cookie = raw_input(" \033[1;97m[\033[1;96m+[\033[1;97m] \033[1;96mMasukan Cookies \033[1;97m: ")
 	try:
 		data = requests.get('https://m.facebook.com/composer/ocelot/async_loader/?publisher=feed#_=_', headers = {
-		'user-agent'                : 'Opera/9.80 (X11; Linux x86_64; U; Ubuntu/10.10 (maverick); pl) Presto/2.7.62 Version/11.01', # Jangan Di Ganti Ea Anjink.
+		'user-agent'                : 'Opera/9.80 (X11; Linux x86_64; U; Ubuntu/10.10 (maverick); pl) Presto/2.7.62 Version/11.01',
 		'referer'                   : 'https://m.facebook.com/',
 		'host'                      : 'm.facebook.com',
 		'origin'                    : 'https://m.facebook.com',
